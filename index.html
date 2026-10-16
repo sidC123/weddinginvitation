@@ -552,6 +552,223 @@
       margin-top: 2rem;
       padding-bottom: 2rem;
     }
+
+    /* Responsive invitation refresh */
+    body {
+      background:
+        radial-gradient(ellipse at top left, rgba(212, 175, 55, 0.08), transparent 34rem),
+        var(--bg-cream);
+    }
+
+    .container {
+      max-width: 1160px;
+      padding: 1.25rem 1.5rem 7rem;
+    }
+
+    .hero {
+      min-height: 610px;
+      padding: 4.5rem 2rem 2.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(232, 216, 181, 0.8);
+      border-radius: 28px;
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #563b32;
+      box-shadow: 0 24px 60px rgba(55, 34, 25, 0.18);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(31, 19, 17, 0.26), rgba(31, 19, 17, 0.68)),
+        linear-gradient(90deg, rgba(31, 19, 17, 0.18), transparent 55%, rgba(31, 19, 17, 0.18));
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 54%;
+    }
+
+    .shree-ganesh {
+      color: #fff7df;
+      letter-spacing: 0.08em;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .couple-title {
+      color: #fff;
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      margin: 1rem 0;
+      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    .couple-knot {
+      color: #f2d47d;
+    }
+
+    .invite-text {
+      color: rgba(255, 255, 255, 0.94);
+      max-width: 560px;
+      font-size: 1.05rem;
+    }
+
+    .countdown-box {
+      width: min(100%, 570px);
+      margin: 1.2rem 0 0;
+      padding: 1.15rem 1rem;
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.93);
+      backdrop-filter: blur(10px);
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .event-grid .card {
+      height: 100%;
+    }
+
+    .card {
+      border-radius: 22px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(65, 43, 29, 0.07);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 38px rgba(65, 43, 29, 0.11);
+    }
+
+    .event-title {
+      font-size: 1.85rem;
+    }
+
+    .detail-row {
+      line-height: 1.75;
+    }
+
+    .btn,
+    .counter-btn,
+    .music-toggle,
+    .radio-pill label {
+      min-height: 44px;
+    }
+
+    .btn:hover {
+      filter: brightness(0.97);
+      transform: translateY(-1px);
+    }
+
+    .btn:focus-visible,
+    .counter-btn:focus-visible,
+    .music-toggle:focus-visible,
+    .submit-btn:focus-visible,
+    .whatsapp-float-bar:focus-visible,
+    .radio-pill input[type="radio"]:focus-visible + label {
+      outline: 3px solid rgba(212, 175, 55, 0.55);
+      outline-offset: 3px;
+    }
+
+    .radio-pill input[type="radio"] {
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+
+    .venue-card,
+    #rsvp-section {
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .whatsapp-float-bar {
+      left: auto;
+      right: max(1.5rem, calc((100vw - 1160px) / 2));
+      bottom: 1.5rem;
+      width: auto;
+      max-width: min(440px, calc(100% - 2rem));
+      padding: 0.9rem 1.35rem;
+      transform: none;
+    }
+
+    .whatsapp-float-bar:active {
+      transform: scale(0.97);
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 0.75rem 1rem 6.5rem;
+      }
+
+      .hero {
+        min-height: 570px;
+        padding: 3.5rem 1rem 2rem;
+        margin-bottom: 1.25rem;
+        border-radius: 22px;
+      }
+
+      .couple-title {
+        font-size: clamp(2.2rem, 10vw, 3.2rem);
+      }
+
+      .invite-text {
+        font-size: 0.92rem;
+      }
+
+      .event-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .card {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .whatsapp-float-bar {
+        right: 1rem;
+        bottom: max(1rem, env(safe-area-inset-bottom));
+        left: 1rem;
+        width: auto;
+        max-width: none;
+        padding: 0.85rem 1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
   </style>
 </head>
 
@@ -569,6 +786,9 @@
 
     <!-- HERO SECTION -->
     <section class="hero" data-aos="fade-down" data-aos-duration="900">
+      <img class="hero-image"
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=2000&amp;q=85"
+        alt="" fetchpriority="high">
       <span class="shree-ganesh">॥ श्री गणेशाय नमः ॥</span>
       <h1 class="couple-title">पायल <span class="couple-knot">♥</span> सिद्धेश</h1>
       <p class="invite-text">आमच्या आयुष्यातील या मंगलमय क्षणी आपल्या प्रेमळ उपस्थितीचे व आशीर्वादाचे हार्दिक निमंत्रण!
@@ -595,6 +815,7 @@
       </div>
     </section>
 
+    <div class="event-grid">
     <!-- EVENT 1: ENGAGEMENT -->
     <div class="card" data-aos="fade-up" data-aos-duration="800">
       <div class="badge"><i class="fa-solid fa-ring"></i> वाङ्निश्चय (साखरपुडा)</div>
@@ -653,6 +874,7 @@
           <i class="fa-solid fa-calendar-plus"></i> कॅलेंडर
         </a>
       </div>
+    </div>
     </div>
 
     <!-- VENUE CARD -->
