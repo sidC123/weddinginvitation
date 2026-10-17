@@ -681,7 +681,7 @@
     .music-toggle:focus-visible,
     .submit-btn:focus-visible,
     .whatsapp-float-bar:focus-visible,
-    .radio-pill input[type="radio"]:focus-visible + label {
+    .radio-pill input[type="radio"]:focus-visible+label {
       outline: 3px solid rgba(212, 175, 55, 0.55);
       outline-offset: 3px;
     }
@@ -755,6 +755,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       *,
       *::before,
       *::after {
@@ -775,11 +776,11 @@
 <body>
 
   <!-- Audio Toggle -->
-  <button class="music-toggle" id="musicBtn" title="संगीत चालू / बंद करा" aria-label="Toggle Background Music">
+  <button class="music-toggle" id="musicBtn" title="संगीत चालू / बंद करा" aria-label="Toggle Background Music" aria-pressed="false">
     <i class="fa-solid fa-music"></i>
   </button>
   <audio id="bgMusic" loop preload="none">
-    <source src="" type="audio/mpeg">
+    <source src="RANGA_MALIYELA.mp3" type="audio/mpeg">
   </audio>
 
   <div class="container">
@@ -791,7 +792,8 @@
         alt="" fetchpriority="high">
       <span class="shree-ganesh">॥ श्री गणेशाय नमः ॥</span>
       <h1 class="couple-title">पायल <span class="couple-knot">♥</span> सिद्धेश</h1>
-      <p class="invite-text">आमच्या आयुष्यातील या मंगलमय क्षणी आपल्या प्रेमळ उपस्थितीचे व आशीर्वादाचे हार्दिक निमंत्रण!
+      <p class="invite-text">आमच्या आयुष्यातील या मंगलमय क्षणी आपल्या प्रेमळ उपस्थितीचे व आशीर्वादाचे हार्दिक
+        निमंत्रण!
       </p>
 
       <!-- COUNTDOWN TIMER -->
@@ -816,65 +818,65 @@
     </section>
 
     <div class="event-grid">
-    <!-- EVENT 1: ENGAGEMENT -->
-    <div class="card" data-aos="fade-up" data-aos-duration="800">
-      <div class="badge"><i class="fa-solid fa-ring"></i> वाङ्निश्चय (साखरपुडा)</div>
-      <h2 class="event-title">साखरपुडा समारंभ</h2>
+      <!-- EVENT 1: ENGAGEMENT -->
+      <div class="card" data-aos="fade-up" data-aos-duration="800">
+        <div class="badge"><i class="fa-solid fa-ring"></i> वाङ्निश्चय (साखरपुडा)</div>
+        <h2 class="event-title">साखरपुडा समारंभ</h2>
 
-      <div class="detail-row">
-        <i class="fa-regular fa-calendar-days"></i>
-        <div><strong>रविवार, २१ फेब्रुवारी २०२७</strong></div>
-      </div>
-      <div class="detail-row">
-        <i class="fa-regular fa-clock"></i>
-        <div>सायंकाळी ५:०० वाजता पुढे</div>
-      </div>
-      <div class="detail-row">
-        <i class="fa-solid fa-location-dot"></i>
-        <div>सखूबाई भास्कर हॉल, तळमजला (Ground Floor), मनवेल पाडा, विरार (पूर्व)</div>
-      </div>
+        <div class="detail-row">
+          <i class="fa-regular fa-calendar-days"></i>
+          <div><strong>रविवार, २१ फेब्रुवारी २०२७</strong></div>
+        </div>
+        <div class="detail-row">
+          <i class="fa-regular fa-clock"></i>
+          <div>सायंकाळी ५:०० वाजता पुढे</div>
+        </div>
+        <div class="detail-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>सखूबाई भास्कर हॉल, तळमजला (Ground Floor), मनवेल पाडा, विरार (पूर्व)</div>
+        </div>
 
-      <div class="btn-group">
-        <a href="https://maps.google.com/?cid=12294500735134889440" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline">
-          <i class="fa-solid fa-diamond-turn-right"></i> दिशादर्शक
-        </a>
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=पायल+आणि+सिद्धेश+-+साखरपुडा&dates=20270221T170000/20270221T210000&details=पायल+आणि+सिद्धेश+यांच्या+साखरपुड्याला+उपस्थित+राहणे.&location=Sakhubai+Bhaskar+Hall,+Manvel+Pada,+Virar+East"
-          target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          <i class="fa-solid fa-calendar-plus"></i> कॅलेंडर
-        </a>
-      </div>
-    </div>
-
-    <!-- EVENT 2: WEDDING -->
-    <div class="card" data-aos="fade-up" data-aos-duration="800">
-      <div class="badge"><i class="fa-solid fa-hand-holding-heart"></i> शुभविवाह</div>
-      <h2 class="event-title">लग्न सोहळा</h2>
-
-      <div class="detail-row">
-        <i class="fa-regular fa-calendar-days"></i>
-        <div><strong>शनिवार, २७ फेब्रुवारी २०२७</strong></div>
-      </div>
-      <div class="detail-row">
-        <i class="fa-regular fa-clock"></i>
-        <div>शुभ मुहूर्त: दुपारी १२:३५ वाजता</div>
-      </div>
-      <div class="detail-row">
-        <i class="fa-solid fa-location-dot"></i>
-        <div>सखूबाई भास्कर हॉल, पहिला मजला (1st Floor), मनवेल पाडा, विरार (पूर्व)</div>
+        <div class="btn-group">
+          <a href="https://maps.google.com/?cid=12294500735134889440" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline">
+            <i class="fa-solid fa-diamond-turn-right"></i> दिशादर्शक
+          </a>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=पायल+आणि+सिद्धेश+-+साखरपुडा&dates=20270221T170000/20270221T210000&details=पायल+आणि+सिद्धेश+यांच्या+साखरपुड्याला+उपस्थित+राहणे.&location=Sakhubai+Bhaskar+Hall,+Manvel+Pada,+Virar+East"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-calendar-plus"></i> कॅलेंडर
+          </a>
+        </div>
       </div>
 
-      <div class="btn-group">
-        <a href="https://maps.google.com/?cid=12294500735134889440" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline">
-          <i class="fa-solid fa-diamond-turn-right"></i> दिशादर्शक
-        </a>
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=पायल+आणि+सिद्धेश+-+शुभविवाह&dates=20270227T123500/20270227T160000&details=पायल+आणि+सिद्धेश+यांचा+शुभविवाह+समारंभ.&location=Sakhubai+Bhaskar+Hall,+Manvel+Pada,+Virar+East"
-          target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          <i class="fa-solid fa-calendar-plus"></i> कॅलेंडर
-        </a>
+      <!-- EVENT 2: WEDDING -->
+      <div class="card" data-aos="fade-up" data-aos-duration="800">
+        <div class="badge"><i class="fa-solid fa-hand-holding-heart"></i> शुभविवाह</div>
+        <h2 class="event-title">लग्न सोहळा</h2>
+
+        <div class="detail-row">
+          <i class="fa-regular fa-calendar-days"></i>
+          <div><strong>शनिवार, २७ फेब्रुवारी २०२७</strong></div>
+        </div>
+        <div class="detail-row">
+          <i class="fa-regular fa-clock"></i>
+          <div>शुभ मुहूर्त: दुपारी १२:३५ वाजता</div>
+        </div>
+        <div class="detail-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>सखूबाई भास्कर हॉल, पहिला मजला (1st Floor), मनवेल पाडा, विरार (पूर्व)</div>
+        </div>
+
+        <div class="btn-group">
+          <a href="https://maps.google.com/?cid=12294500735134889440" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline">
+            <i class="fa-solid fa-diamond-turn-right"></i> दिशादर्शक
+          </a>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=पायल+आणि+सिद्धेश+-+शुभविवाह&dates=20270227T123500/20270227T160000&details=पायल+आणि+सिद्धेश+यांचा+शुभविवाह+समारंभ.&location=Sakhubai+Bhaskar+Hall,+Manvel+Pada,+Virar+East"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-calendar-plus"></i> कॅलेंडर
+          </a>
+        </div>
       </div>
-    </div>
     </div>
 
     <!-- VENUE CARD -->
@@ -916,7 +918,8 @@
           <div class="input-hint">
             <span>१० अंकी वैध भारतीय मोबाईल नंबर</span>
           </div>
-          <div class="error-msg" id="phoneError">कृपया वैध १० अंकी भारतीय मोबाईल क्रमांक प्रविष्ट करा (उदा. 9876543210).
+          <div class="error-msg" id="phoneError">कृपया वैध १० अंकी भारतीय मोबाईल क्रमांक प्रविष्ट करा (उदा.
+            9876543210).
           </div>
         </div>
 
@@ -1294,58 +1297,28 @@
     );
     document.getElementById("whatsappShareBtn").href = `https://api.whatsapp.com/send?text=${shareText}${currentUrl}`;
 
-    // 9. Ambient Audio Synthesizer / Audio Fallback
+    // 9. Background Music Toggle
     const musicBtn = document.getElementById("musicBtn");
     const bgMusic = document.getElementById("bgMusic");
-    let isPlaying = false;
-    let audioCtx = null;
-    let oscillator = null;
-    let gainNode = null;
-
-    function playTone() {
-      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      if (audioCtx.state === 'suspended') audioCtx.resume();
-      oscillator = audioCtx.createOscillator();
-      gainNode = audioCtx.createGain();
-      oscillator.type = 'triangle';
-      oscillator.frequency.setValueAtTime(220, audioCtx.currentTime);
-      gainNode.gain.setValueAtTime(0.035, audioCtx.currentTime);
-      oscillator.connect(gainNode);
-      gainNode.connect(audioCtx.destination);
-      oscillator.start();
-    }
-
-    function stopTone() {
-      if (oscillator) {
-        gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.4);
-        setTimeout(() => {
-          if (oscillator) {
-            oscillator.stop();
-            oscillator.disconnect();
-            oscillator = null;
-          }
-        }, 400);
-      }
-    }
 
     musicBtn.addEventListener("click", () => {
-      if (!isPlaying) {
-        if (bgMusic.querySelector('source').src) {
-          bgMusic.play().then(() => {
-            isPlaying = true;
-            musicBtn.classList.add("playing");
-          }).catch(e => console.log(e));
-        } else {
-          playTone();
-          isPlaying = true;
-          musicBtn.classList.add("playing");
-        }
+      if (bgMusic.paused) {
+        bgMusic.play().catch(error => {
+          console.error("Background music could not be played.", error);
+        });
       } else {
-        if (bgMusic.querySelector('source').src) bgMusic.pause();
-        else stopTone();
-        isPlaying = false;
-        musicBtn.classList.remove("playing");
+        bgMusic.pause();
       }
+    });
+
+    bgMusic.addEventListener("play", () => {
+      musicBtn.classList.add("playing");
+      musicBtn.setAttribute("aria-pressed", "true");
+    });
+
+    bgMusic.addEventListener("pause", () => {
+      musicBtn.classList.remove("playing");
+      musicBtn.setAttribute("aria-pressed", "false");
     });
   </script>
 </body>
